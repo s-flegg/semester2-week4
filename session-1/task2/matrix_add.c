@@ -16,5 +16,32 @@
     Store your answer in matrix c
     Print your final answer
     */
+
+    // initialise
+    for (int i=0; i<4; i++) {
+      for (int j=0; j<4; j++) {
+         a[i][j] = 1;
+         b[i][j] = 1;
+      }
+    }
+    // sum
+    for (int i=0; i<4; i++) {
+      for (int j=0; j<4; j++) {
+         c[i][j] = a[i][j] + b[i][j];
+      }
+    }
+    // print
+    printf("[\n");
+    for (int i=0; i<4; i++) {
+      printf("    [ ");
+
+      for (int j=0; j<4; j++) {
+         printf("%f, ", c[i][j]);
+      }
+
+      printf("],\n");
+    }
+
+    printf("]\n");
     return 0;
  }
