@@ -13,3 +13,14 @@
  6. print the answer appropriately as pointer, character and string
  */ 
 
+#include <stdio.h>
+#include <string.h>
+
+int main ( void ) {
+    char toSearch[] = "The quick brown fox jumped over the lazy dog";
+    char toFind[] = "ump";
+
+    char *ptr = strstr(toSearch, toFind);
+
+    printf("The pointer to the substring is %p\n", ptr);
+}

@@ -9,3 +9,4 @@ Question:
 - Hint: Think about how C data is stored in memory. 
 - Test this by changing the second string to something other than "hello".
 
+lack of termination character \0 leads to memory being read past the end of the char array
